@@ -9,8 +9,8 @@ import java.io.Serializable;
 @JsonAutoDetect
 @Table(name = "users", schema = "Link")
 public class UserEntity implements Serializable {
-    private static final long serialVersionUID = 7280689671872850562L;
 
+    private static final long serialVersionUID = -5699759887677801214L;
     // 가입정보
     private int id;
 
