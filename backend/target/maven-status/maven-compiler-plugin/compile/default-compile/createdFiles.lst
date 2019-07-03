@@ -1,0 +1,10 @@
+com/sclnetworks/backend/repository/UserRepository.class
+com/sclnetworks/backend/service/UserDetailsServiceImpl.class
+com/sclnetworks/backend/ServletInitializer.class
+com/sclnetworks/backend/service/UserServiceImpl.class
+com/sclnetworks/backend/config/SecurityConfig$1.class
+com/sclnetworks/backend/BackendApplication.class
+com/sclnetworks/backend/service/UserService.class
+com/sclnetworks/backend/config/SecurityConfig.class
+com/sclnetworks/backend/model/UserEntity.class
+com/sclnetworks/backend/config/DatabaseConfig.class

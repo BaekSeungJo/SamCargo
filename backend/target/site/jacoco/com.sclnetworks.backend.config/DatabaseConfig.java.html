@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ko"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>DatabaseConfig.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">backend</a> &gt; <a href="index.source.html" class="el_package">com.sclnetworks.backend.config</a> &gt; <span class="el_source">DatabaseConfig.java</span></div><h1>DatabaseConfig.java</h1><pre class="source lang-java linenums">package com.sclnetworks.backend.config;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
+import org.springframework.core.env.Environment;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+import org.springframework.jdbc.datasource.DriverManagerDataSource;
+import org.springframework.orm.jpa.JpaTransactionManager;
+import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
+import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
+import org.springframework.transaction.PlatformTransactionManager;
+
+import javax.sql.DataSource;
+import java.util.HashMap;
+
+@Configuration
+@EnableJpaRepositories(
+        basePackages = &quot;com.sclnetworks.backend.repository&quot;,
+        entityManagerFactoryRef = &quot;cargoEntityManager&quot;,
+        transactionManagerRef = &quot;cargoTransactionManager&quot;
+)
+<span class="fc" id="L24">public class DatabaseConfig {</span>
+    @Autowired
+    private Environment env;
+
+    @Primary
+    @Bean
+    public LocalContainerEntityManagerFactoryBean cargoEntityManager() {
+<span class="fc" id="L31">        LocalContainerEntityManagerFactoryBean em = new LocalContainerEntityManagerFactoryBean();</span>
+<span class="fc" id="L32">        em.setDataSource(cargoDataSource());</span>
+<span class="fc" id="L33">        em.setPackagesToScan(new String[] { &quot;com.sclnetworks.backend.model&quot; });</span>
+
+<span class="fc" id="L35">        HibernateJpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();</span>
+<span class="fc" id="L36">        em.setJpaVendorAdapter(vendorAdapter);</span>
+<span class="fc" id="L37">        HashMap&lt;String, Object&gt; properties = new HashMap&lt;&gt;();</span>
+<span class="fc" id="L38">        properties.put(&quot;hibernate.dialect&quot;, env.getProperty(&quot;spring.jpa.properties.hibernate.dialect&quot;));</span>
+<span class="fc" id="L39">        em.setJpaPropertyMap(properties);</span>
+
+<span class="fc" id="L41">        return em;</span>
+    }
+
+    @Primary
+    @Bean
+    public DataSource cargoDataSource() {
+
+<span class="fc" id="L48">        DriverManagerDataSource dataSource = new DriverManagerDataSource();</span>
+<span class="fc" id="L49">        dataSource.setDriverClassName(env.getProperty(&quot;spring.datasource.driverClassName&quot;));</span>
+<span class="fc" id="L50">        dataSource.setUrl(env.getProperty(&quot;cargodb.datasource.url&quot;));</span>
+<span class="fc" id="L51">        dataSource.setUsername(env.getProperty(&quot;cargodb.datasource.username&quot;));</span>
+<span class="fc" id="L52">        dataSource.setPassword(env.getProperty(&quot;cargodb.datasource.password&quot;));</span>
+
+<span class="fc" id="L54">        return dataSource;</span>
+    }
+
+    @Primary
+    @Bean
+    public PlatformTransactionManager cargoTransactionManager() {
+
+<span class="fc" id="L61">        JpaTransactionManager transactionManager = new JpaTransactionManager();</span>
+<span class="fc" id="L62">        transactionManager.setEntityManagerFactory(</span>
+<span class="fc" id="L63">                cargoEntityManager().getObject());</span>
+<span class="fc" id="L64">        return transactionManager;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span></div></body></html>
