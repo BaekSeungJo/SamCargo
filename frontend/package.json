@@ -1,8 +1,8 @@
 {
   "name": "frontend",
   "version": "1.0.1",
-  "description": "A Quasar Framework app",
-  "productName": "Quasar App",
+  "description": "삼천리 네트웍스의 화물 플랫폼",
+  "productName": "보내고",
   "cordovaId": "com.sclnetworks.samcargo",
   "author": "",
   "private": true,
