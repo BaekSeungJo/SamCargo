@@ -16,38 +16,22 @@ module.exports = function (ctx) {
     ],
 
     extras: [
-      // 'ionicons-v4',
-      // 'mdi-v3',
-      // 'fontawesome-v5',
-      // 'eva-icons',
-      // 'themify',
-      // 'roboto-font-latin-ext', // this or either 'roboto-font', NEVER both!
+      'ionicons-v4',
+      'mdi-v3',
+      'fontawesome-v5',
+      'eva-icons',
+      'themify',
+      'roboto-font-latin-ext', // this or either 'roboto-font', NEVER both!
 
       'roboto-font', // optional, you are not bound to it
       'material-icons' // optional, you are not bound to it
     ],
 
     framework: {
-      // iconSet: 'ionicons-v4',
+      iconSet: 'ionicons-v4',
       // lang: 'de', // Quasar language
 
        all: true, // --- includes everything; for dev only!
-
-      // components: [
-      //   'QLayout',
-      //   'QHeader',
-      //   'QDrawer',
-      //   'QPageContainer',
-      //   'QPage',
-      //   'QToolbar',
-      //   'QToolbarTitle',
-      //   'QBtn',
-      //   'QIcon',
-      //   'QList',
-      //   'QItem',
-      //   'QItemSection',
-      //   'QItemLabel'
-      // ],
 
       directives: [
         'Ripple',
@@ -76,7 +60,7 @@ module.exports = function (ctx) {
         // Other files/folders here...
       ],
       scopeHoisting: true,
-      // vueRouterMode: 'history',
+      vueRouterMode: 'history',
       // vueCompiler: true,
       // gzip: true,
       // analyze: true,
@@ -85,11 +69,11 @@ module.exports = function (ctx) {
         cfg.module.rules.push({
           enforce: 'pre',
           test: /\.(js|vue)$/,
-          loader: 'eslint-loader',
+          // loader: 'eslint-loader',
           exclude: /node_modules/,
-          options: {
-            formatter: require('eslint').CLIEngine.getFormatter('stylish')
-          }
+          // options: {
+          //   formatter: require('eslint').CLIEngine.getFormatter('stylish')
+          // }
         })
       }
     },
@@ -111,8 +95,8 @@ module.exports = function (ctx) {
       // workboxPluginMode: 'InjectManifest',
       // workboxOptions: {}, // only for NON InjectManifest
       manifest: {
-        name: 'Sam Cargo',
-        short_name: '삼천리 화물',
+        name: 'BONEGO',
+        short_name: '보내고',
         // description: 'A Quasar Framework app',
         display: 'standalone',
         orientation: 'portrait',

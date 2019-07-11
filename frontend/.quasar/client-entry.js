@@ -14,6 +14,18 @@ import 'quasar/dist/quasar.ie.polyfills.js'
 
 
 
+import '@quasar/extras/ionicons-v4/ionicons-v4.css'
+
+import '@quasar/extras/mdi-v3/mdi-v3.css'
+
+import '@quasar/extras/fontawesome-v5/fontawesome-v5.css'
+
+import '@quasar/extras/eva-icons/eva-icons.css'
+
+import '@quasar/extras/themify/themify.css'
+
+import '@quasar/extras/roboto-font-latin-ext/roboto-font-latin-ext.css'
+
 import '@quasar/extras/roboto-font/roboto-font.css'
 
 import '@quasar/extras/material-icons/material-icons.css'
@@ -188,8 +200,6 @@ import Vue from 'vue'
 import createApp from './app.js'
 
 
-import 'app/src-pwa/register-service-worker.js'
-
 
 
 import qboot_Booti18n from 'boot/i18n'
@@ -200,26 +210,21 @@ import qboot_Bootaxios from 'boot/axios'
 
 
 
-import FastClick from 'fastclick'
 
 
 
 
+Vue.config.devtools = true
+Vue.config.productionTip = false
 
+
+
+console.info('[Quasar] Running SPA.')
 
 
 
 const { app, store, router } = createApp()
 
-
-
-// Needed only for iOS PWAs
-if (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream && window.navigator.standalone) {
-
-  document.addEventListener('DOMContentLoaded', () => {
-    FastClick.attach(document.body)
-  }, false)
-}
 
 
 async function start () {

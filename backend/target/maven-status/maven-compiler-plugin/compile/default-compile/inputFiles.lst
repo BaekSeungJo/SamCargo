@@ -1,9 +1,0 @@
-/Users/baegseungjo/Projects/Server/SamCargo/backend/src/main/java/com/sclnetworks/backend/config/DatabaseConfig.java
-/Users/baegseungjo/Projects/Server/SamCargo/backend/src/main/java/com/sclnetworks/backend/service/UserServiceImpl.java
-/Users/baegseungjo/Projects/Server/SamCargo/backend/src/main/java/com/sclnetworks/backend/config/SecurityConfig.java
-/Users/baegseungjo/Projects/Server/SamCargo/backend/src/main/java/com/sclnetworks/backend/service/UserService.java
-/Users/baegseungjo/Projects/Server/SamCargo/backend/src/main/java/com/sclnetworks/backend/ServletInitializer.java
-/Users/baegseungjo/Projects/Server/SamCargo/backend/src/main/java/com/sclnetworks/backend/repository/UserRepository.java
-/Users/baegseungjo/Projects/Server/SamCargo/backend/src/main/java/com/sclnetworks/backend/model/UserEntity.java
-/Users/baegseungjo/Projects/Server/SamCargo/backend/src/main/java/com/sclnetworks/backend/BackendApplication.java
-/Users/baegseungjo/Projects/Server/SamCargo/backend/src/main/java/com/sclnetworks/backend/service/UserDetailsServiceImpl.java
