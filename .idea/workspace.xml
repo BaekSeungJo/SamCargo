@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="81559196-2951-4696-9546-237a9f3fa836" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/quasar.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/quasar.conf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/css/app.styl" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/css/app.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/css/quasar.variables.styl" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/css/quasar.variables.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/layouts/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/layouts/Login.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/layouts/MyLayout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/layouts/MyLayout.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/page1/page1.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/page1/page1_pa.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/page1/page1_pb.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/page1/page1_pc.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/page2.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/page3.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/page4.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/router/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/router/routes.js" afterDir="false" />
-    </list>
+    <list default="true" id="81559196-2951-4696-9546-237a9f3fa836" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/backend/target/" />
@@ -129,8 +113,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frontend/src/router/routes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="92" selection-start-line="24" selection-start-column="92" selection-end-line="24" selection-end-column="92" />
+            <state relative-caret-position="570">
+              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
             </state>
           </provider>
         </entry>
@@ -346,7 +330,7 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563153482370" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563154555461" />
     <property name="editor.config.ad.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -415,11 +399,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31956000" />
+    <option name="totallyTimeSpent" value="32400000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1680" y="0" width="1920" height="1080" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49856734" visible="true" weight="0.20553781" />
       <window_info id="Structure" order="1" sideWeight="0.50143266" side_tool="true" weight="0.16056167" />
@@ -803,8 +786,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/router/routes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="92" selection-start-line="24" selection-start-column="92" selection-end-line="24" selection-end-column="92" />
+        <state relative-caret-position="570">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
         </state>
       </provider>
     </entry>
