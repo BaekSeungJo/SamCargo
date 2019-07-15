@@ -1,0 +1,19 @@
+language: java
+jdk: oraclejdk8
+
+# deploy:
+#   provider: heroku
+#   api_key:
+#     secure: "98e09a99-8d88-4ff6-b0f1-b55aadecaefa"
+
+# single notification
+#notifications:
+#  slack: sam-net-team:dmdUn9LOoHr56jXTEJ1TPe5m
+
+# multi channels notification
+notifications:
+  slack:
+    rooms:
+    - sam-net-team:dmdUn9LOoHr56jXTEJ1TPe5m#general
+    - sam-net-team:dmdUn9LOoHr56jXTEJ1TPe5m#random
+    - sam-net-team:dmdUn9LOoHr56jXTEJ1TPe5m#development
