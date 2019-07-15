@@ -3,10 +3,10 @@
     <q-page>
       <div class="flex justify-center items-center">
         <!-- Login form box-->
-        <div class="row justify-center items-center" style="width: 50vw; height: 100vh;">
+        <div class="row justify-center items-center" style="width: 40vw; height: 100vh;">
           <div class="">
             <section class=" q-mb-xl">
-              <span class="flex text-h2 text-weight-bolder full-width flex-center">BONEGO SYSTEM</span>
+              <span class="flex text-h2 text-weight-bolder full-width flex-center">보내고 SYSTEM</span>
               <span class="flex text-h5 text-weight-bolder full-width flex-center">터미널 허브 화물 운송 서비스</span>
             </section>
 
@@ -37,7 +37,7 @@
                 </template>
               </q-input>
 
-              <q-checkbox v-model="accept" label="나는 라이센스및 약관에 동의 합니다." />
+              <q-checkbox v-model="accept" label="나는 라이센스 및 약관에 동의 합니다." />
 
               <div>
                 <q-btn label="Submit" type="submit" color="primary"/>
@@ -51,7 +51,7 @@
         <!-- Intro img box -->
         <div class="flex justify-center items-center"
              style="
-             width: 50vw;
+             width: 60vw;
              height: 100vh;
              backgroundImage: url('statics/plane.jpg');
              background-size: cover;
@@ -67,6 +67,8 @@
 </template>
 
 <script>
+  import { LocalStorage, SessionStorage } from 'quasar'
+
     export default {
         name: "Login",
       data () {
@@ -87,8 +89,8 @@
               color: 'red-5',
               textColor: 'white',
               icon: 'fas fa-exclamation-triangle',
-              message: 'You need to accept the license and terms first'
-            })
+              message: '먼저 라이센스 및 약관에 동의하십시오.'
+            });
           }
           else {
             this.$q.notify({
@@ -96,7 +98,9 @@
               textColor: 'white',
               icon: 'fas fa-check-circle',
               message: 'Submitted'
-            })
+            });
+
+            this.$router.push('/main/term/');
           }
         },
 
