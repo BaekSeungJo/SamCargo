@@ -3,17 +3,10 @@
     <q-page>
       <div class="flex justify-center items-center">
         <!-- Login form box-->
-<<<<<<< HEAD
         <div class="row justify-center items-center" style="width: 40vw; height: 100vh;">
           <div class="">
             <section class=" q-mb-xl">
               <span class="flex text-h2 text-weight-bolder full-width flex-center">보내고 SYSTEM</span>
-=======
-        <div class="row justify-center items-center" style="width: 50vw; height: 100vh;">
-          <div class="">
-            <section class=" q-mb-xl">
-              <span class="flex text-h2 text-weight-bolder full-width flex-center">BONEGO SYSTEM</span>
->>>>>>> master
               <span class="flex text-h5 text-weight-bolder full-width flex-center">터미널 허브 화물 운송 서비스</span>
             </section>
 
@@ -44,11 +37,7 @@
                 </template>
               </q-input>
 
-<<<<<<< HEAD
               <q-checkbox v-model="accept" label="나는 라이센스 및 약관에 동의 합니다." />
-=======
-              <q-checkbox v-model="accept" label="나는 라이센스및 약관에 동의 합니다." />
->>>>>>> master
 
               <div>
                 <q-btn label="Submit" type="submit" color="primary"/>
@@ -62,11 +51,7 @@
         <!-- Intro img box -->
         <div class="flex justify-center items-center"
              style="
-<<<<<<< HEAD
              width: 60vw;
-=======
-             width: 50vw;
->>>>>>> master
              height: 100vh;
              backgroundImage: url('statics/plane.jpg');
              background-size: cover;
@@ -82,11 +67,8 @@
 </template>
 
 <script>
-<<<<<<< HEAD
   import { LocalStorage, SessionStorage } from 'quasar'
 
-=======
->>>>>>> master
     export default {
         name: "Login",
       data () {
@@ -107,13 +89,8 @@
               color: 'red-5',
               textColor: 'white',
               icon: 'fas fa-exclamation-triangle',
-<<<<<<< HEAD
               message: '먼저 라이센스 및 약관에 동의하십시오.'
             });
-=======
-              message: 'You need to accept the license and terms first'
-            })
->>>>>>> master
           }
           else {
             this.$q.notify({
@@ -121,13 +98,9 @@
               textColor: 'white',
               icon: 'fas fa-check-circle',
               message: 'Submitted'
-<<<<<<< HEAD
             });
 
             this.$router.push('/main/term/');
-=======
-            })
->>>>>>> master
           }
         },
 

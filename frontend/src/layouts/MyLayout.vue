@@ -1,10 +1,6 @@
 <template>
   <!--lHh Lpr lFf-->
-<<<<<<< HEAD
   <q-layout view="hHh LpR lff" class="bg-grey-2">
-=======
-  <q-layout view="hHh LpR lff">
->>>>>>> master
     <q-header bordered v-model="header" :reveal="headerReveal">
       <q-toolbar>
         <q-btn
@@ -18,7 +14,6 @@
         </q-btn>
 
         <q-toolbar-title slot="default">
-<<<<<<< HEAD
           보내고-ADMIN
           <span slot="subtitle">보내고 메인 관리자</span>
         </q-toolbar-title>
@@ -37,15 +32,6 @@
           <q-tooltip anchor="bottom middle" self="top middle" content-style="font-size: 16px" :offset="[10, 10]">
             <strong>로그아웃</strong>
           </q-tooltip>
-=======
-          Bonego administrator
-          <span slot="subtitle">보내고 메인 관리자</span>
-        </q-toolbar-title>
-
-        <q-btn flat @click="signOut">
-          <q-icon left name="exit_to_app" />
-          로그아웃
->>>>>>> master
         </q-btn>
         <!--<div>Quasar v{{ $q.version }}</div>-->
       </q-toolbar>
@@ -72,36 +58,23 @@
       @mouseout="miniState = true"
 
       show-if-above
-<<<<<<< HEAD
       content-class="bg-grey-4"
     >
       <q-list class="text-indigo-10 q-pb-lg">
-=======
-      content-class="bg-grey-3"
-    >
-      <q-list>
->>>>>>> master
         <q-item class="q-pa-md">
           <q-item-section avatar>
             <q-avatar rounded>
               <img src="https://cdn.quasar.dev/img/avatar.png">
             </q-avatar>
           </q-item-section>
-<<<<<<< HEAD
           <q-item-section class="items-end text-grey-10">
             <q-item-label class="text-subtitle1 text-weight-bolder">Admin account role</q-item-label>
             <q-item-label class="text-subtitle2">J.Minjun</q-item-label>
-=======
-          <q-item-section class="items-end">
-            <q-item-label>Admin</q-item-label>
-            <q-item-label caption>J.Minjun</q-item-label>
->>>>>>> master
           </q-item-section>
         </q-item>
 
         <q-separator color="orange" />
 
-<<<<<<< HEAD
         <!--터미널관리-->
         <q-expansion-item
           class="text-h6 text-weight-bolder"
@@ -227,55 +200,11 @@
               <q-item-section>
                 <q-item-label class="text-subtitle1 text-weight-bold">접수</q-item-label>
                 <q-item-label caption>접수내역</q-item-label>
-=======
-        <q-expansion-item
-          expand-separator
-          icon="perm_identity"
-          label="Account settings"
-          caption="John Doe"
-        >
-          <div class="q-ml-md">
-            <q-item clickable @click="clickMenu" to="/main/page1">
-              <q-item-section avatar>
-                <q-icon name="school" />
-              </q-item-section>
-              <q-item-section>
-                <q-item-label>Page1</q-item-label>
-                <q-item-label caption>page1.dev</q-item-label>
-              </q-item-section>
-            </q-item>
-            <q-item clickable @click="clickMenu" to="/main/page1_pa">
-              <q-item-section avatar>
-                <q-icon name="school" />
-              </q-item-section>
-              <q-item-section>
-                <q-item-label>Page1_pa</q-item-label>
-                <q-item-label caption>page1_pa.dev</q-item-label>
-              </q-item-section>
-            </q-item>
-            <q-item clickable @click="clickMenu" to="/main/page1_pb">
-              <q-item-section avatar>
-                <q-icon name="school" />
-              </q-item-section>
-              <q-item-section>
-                <q-item-label>Page1_pa</q-item-label>
-                <q-item-label caption>page1_pa.dev</q-item-label>
-              </q-item-section>
-            </q-item>
-            <q-item clickable @click="clickMenu" to="/main/page1_pc">
-              <q-item-section avatar>
-                <q-icon name="school" />
-              </q-item-section>
-              <q-item-section>
-                <q-item-label>Page1_pa</q-item-label>
-                <q-item-label caption>page1_pa.dev</q-item-label>
->>>>>>> master
               </q-item-section>
             </q-item>
           </div>
         </q-expansion-item>
 
-<<<<<<< HEAD
         <!--보고서관리-->
         <q-expansion-item
           class="text-h6 text-weight-bolder"
@@ -317,44 +246,6 @@
           </div>
         </q-expansion-item>
 
-=======
-        <q-expansion-item
-          expand-separator
-          icon="signal_wifi_off"
-          label="Wifi settings"
-        >
-          <div class="q-ml-md">
-            <q-item clickable @click="clickMenu" to="/main/page2">
-            <q-item-section avatar>
-              <q-icon name="school" />
-            </q-item-section>
-            <q-item-section>
-              <q-item-label>Page2</q-item-label>
-              <q-item-label caption>page2.dev</q-item-label>
-            </q-item-section>
-          </q-item>
-          </div>
-        </q-expansion-item>
-
-        <q-item clickable @click="clickMenu" to="/main/page3">
-        <q-item-section avatar>
-          <q-icon name="school" />
-        </q-item-section>
-        <q-item-section>
-          <q-item-label>Page3</q-item-label>
-          <q-item-label caption>page3.dev</q-item-label>
-        </q-item-section>
-      </q-item>
-        <q-item clickable @click="clickMenu" to="/main/page4">
-          <q-item-section avatar>
-            <q-icon name="school" />
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Page4</q-item-label>
-            <q-item-label caption>page4.dev</q-item-label>
-          </q-item-section>
-        </q-item>
->>>>>>> master
       </q-list>
     </q-drawer>
 
@@ -367,10 +258,7 @@
 
 <script>
 import { openURL } from 'quasar'
-<<<<<<< HEAD
 import { AppFullscreen } from 'quasar'
-=======
->>>>>>> master
 import { mapGetters, mapMutations } from 'vuex'
 
 export default {
@@ -380,12 +268,9 @@ export default {
       header:true,
       headerReveal:true,
       miniState: true,
-<<<<<<< HEAD
 
       _refreshTokenTimer: null,
 
-=======
->>>>>>> master
       leftDrawerOpen: this.$q.platform.is.desktop
     }
   },
@@ -407,7 +292,6 @@ export default {
         return false
       }
     },
-<<<<<<< HEAD
     /**
      * click-listener callback method for side menu item
      * **/
@@ -493,12 +377,6 @@ export default {
     signOut() {
       this.clearTimer();
       this.$router.push('/');
-=======
-    clickMenu () {
-    },
-    signOut() {
-      // this.$router.push('/signIn');
->>>>>>> master
     },
   },
   beforeCreate () {},
@@ -507,7 +385,6 @@ export default {
     this.setLayout(this)
   },
   mounted () {
-<<<<<<< HEAD
     // let layout = this.getLayout.$refs.breadcrumbs;
     // console.log(layout);
 
@@ -519,14 +396,6 @@ export default {
   beforeDestroy () {
     this.cleanup();
   },
-=======
-    let layout = this.getLayout.$refs.breadcrumbs
-    console.log(layout)
-  },
-  beforeUpdate () {},
-  updated () {},
-  beforeDestroy () {},
->>>>>>> master
   destroyed () {}
 }
 </script>
@@ -534,12 +403,9 @@ export default {
 <style>
 </style>
 
-<<<<<<< HEAD
 <style lang="stylus">
 
 </style>
 
-=======
->>>>>>> master
 <style scoped>
 </style>
