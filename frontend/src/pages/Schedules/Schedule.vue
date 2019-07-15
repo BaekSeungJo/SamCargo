@@ -1,6 +1,6 @@
 <template>
   <q-page class="flex flex-center">
-    <p>Page1_pb</p>
+    <p>운행 스케줄 관리</p>
     <img alt="Quasar logo" src="~assets/quasar-logo-full.svg">
   </q-page>
 </template>
@@ -10,6 +10,6 @@
 
 <script>
 export default {
-  name: 'Page1_pa'
+  name: 'Page2'
 }
 </script>
